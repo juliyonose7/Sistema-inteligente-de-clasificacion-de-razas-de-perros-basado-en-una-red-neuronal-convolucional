@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐕 Dog Breed Classifier - ResNet50 119 Clases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo de partículas animadas -->
+    <div class="particles-container">
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🐕 Dog Breed Classifier AI</h1>
+            <p class="subtitle">ResNet50 - 119 Razas de Perros</p>
+            <p class="description">Sube una imagen y descubre la raza con nuestro modelo entrenado</p>
+        </header>
+
+        <!-- Área principal -->
+        <main class="main-content">
+            <!-- Zona de subida de archivos -->
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📁</div>
+                    <h3>Arrastra una imagen aquí</h3>
+                    <p>o haz clic para seleccionar</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        Seleccionar Imagen
+                    </button>
+                </div>
+            </div>
+
+            <!-- Área de imagen subida -->
+            <div class="image-preview" id="imagePreview" style="display: none;">
+                <div class="preview-container glass">
+                    <img id="previewImg" alt="Imagen subida">
+                    <button class="reset-btn" id="resetBtn">🔄 Subir otra imagen</button>
+                </div>
+            </div>
+
+            <!-- Indicador de carga -->
+            <div class="loading-container glass" id="loadingContainer" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analizando imagen con ResNet50...</p>
+                <div class="loading-details">
+                    <small>Procesando 119 clases de razas</small>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div class="results-container" id="resultsContainer" style="display: none;">
+                <!-- Los resultados se insertarán aquí dinámicamente -->
+            </div>
+        </main>
+
+        <!-- Footer con información del modelo -->
+        <footer class="footer">
+            <div class="model-info">
+                <div class="info-item">
+                    <span class="info-label">🏗️ Arquitectura:</span>
+                    <span class="info-value">ResNet50</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">📊 Clases:</span>
+                    <span class="info-value">119 Razas</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">🎯 Método:</span>
+                    <span class="info-value">K-Fold Cross Validation</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">🔗 API:</span>
+                    <span class="info-value">FastAPI Backend</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script principal -->
+    <script src="app.js"></script>
+</body>
+</html>
