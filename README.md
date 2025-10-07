@@ -297,6 +297,23 @@ print(f\"Resultado: {result['prediction']}\")
 print(f\"Probabilidad: {result['probability']:.3f}\")
 ```
 
+##  como acceder a los modelos entrenados con fine tuning y a otros archivos importantes 
+por la gran cantidad de espacio que ocupa el proyecto aisle los modelos y otros archivos clave en este link:L
+https://drive.google.com/drive/folders/1CIyc2sEuHoAvDhPGuKi-CYh8ZQiphMt0?usp=sharing 
+descarga las carpetas y junto al forge puedes acceder al modelo que gustes! (recomiendo el modelo Resnet50 de 119 clases)
+
+## Pantallazos
+
+![WhatsApp Image 2025-10-04 at 15 13 36_20665017](https://github.com/user-attachments/assets/db168037-416c-4c95-8f5b-70b74a7fcd7d)
+![WhatsApp Image 2025-10-04 at 15 13 33_18a5771c](https://github.com/user-attachments/assets/4783582d-549b-437a-854e-55f06fcab2e6)
+<img width="922" height="1010" alt="image" src="https://github.com/user-attachments/assets/90bf38bb-0c2a-436a-a222-10a57affa3f3" />
+<img width="942" height="979" alt="image" src="https://github.com/user-attachments/assets/7ed3d37c-030b-4329-8a51-1f31cbd019ac" />
+<img width="834" height="873" alt="image" src="https://github.com/user-attachments/assets/a05b030d-eaa4-4477-aba2-ca59e7e8b5da" />
+<img width="812" height="864" alt="image" src="https://github.com/user-attachments/assets/ff4f01a7-c8cc-491d-a0d9-1477879de5dd" />
+<img width="913" height="1016" alt="image" src="https://github.com/user-attachments/assets/0f1c3b32-70c8-4b9e-90a4-30845c2b5f37" />
+<img width="965" height="483" alt="image" src="https://github.com/user-attachments/assets/aa7a5ec0-37c6-4237-a73a-0688e3c7e8ee" />
+<img width="631" height="354" alt="image" src="https://github.com/user-attachments/assets/3dad669f-8920-458d-8375-0e3192f5c87d" />
+
 ## 📚 Referencias
 
 - [PyTorch ROCm](https://pytorch.org/get-started/locally/)
@@ -309,5 +326,6 @@ print(f\"Probabilidad: {result['probability']:.3f}\")
 Este proyecto está bajo la licencia MIT. Ver archivo LICENSE para detalles.
 
 ---
+
 
 **Desarrollado para GPU AMD 7900XTX** 🚀
